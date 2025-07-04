@@ -2,24 +2,17 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>העוזרת של אלקסה - טיימר בישול חכם</title>
-    <meta name="description" content="העוזרת של אלקסה - טיימר בישול חכם עם תיקון לוגיקת הספירה לאחור! הטיימר עובד מושלם עם ספירה חלקה, התראות קוליות, והקלדה ידנית. האפליקציה הסופית והמתוקנת לשימוש במטבח.">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoi15TXotW51aLXqNecINi02ZTXkNec16rXqNecIC0g15jXmdeZ157XqCDXkdeZ16nXldecINeX16rXnSIsInNob3J0X25hbWUiOiLXlNe216LVuNeeIOeh15TXkNec16rXqNecIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiNlYTU4MGMiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTlRFeUlpQm9aV2xuYUhROUlqVXhNaUlnZG1sbGQwSnZlRDBpTUNBd0lEVXhNaUExTVRJaUlHWnBiR3c5SW1OdmNtRnNJaUJuY21GdWFXVnVkRDBpWW1SZFpXRjBMaWNqWldGMU9EQmpJaUErUEhCaGRHZ2dSRDBpVFRJMU5pQXhNeklnWVRrMElEazBJREFnTVNBd0lERTROUzQ1SURNMklESTFOaTQ1SURNMU5pNDVJRE0xTmlCaUlEazBJRGswSURBZ01TQXdJUzB4T0RVdU9TQXpOaUFnWWpFME5DNHhJREUwTkNBeE5EUWdNVFEwY3pFME5DQXpNak11T1NCaU1qTTFMall0TlRJdU9TQXpOVFl0TVRJM0xqY2dNalUySURJMU5ub2lMejRnUEhCaGRHZ2dSRDBpVFRJME9DQXlOREJzTVRZZ01UWjJNVFp6TVRZdE1UWWdNVFkwSURGMllqRTJJREUySURGMklURTJjeUUySURGMklURTJkRkpqT1M0eklEazVMak12SWk4K1BDOXpkbWMrSWk0Z0l6RXlPQ0JpWVhObE5qUWlMQ0owZVhCbElqb2lhVzFoWjJVdWMzWm5LMmh0YkNKOVhYMCIsInB1cnBvc2UiOiJhbnkifV19">
-    
-    <!-- Tailwind CSS -->
+    <meta name="description" content="העוזרת של אלקסה - טיימר בישול חכם המושלם! עם ספירה לאחור מתוקנת, כפתור התקנה בולט למסך הבית, התראות קוליות, והקלדה ידנית.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoi15TXotW91aLXqNemINeo15wgXHUwMGZlXHUwMGY3XHUwMGZlIOKIkiDXmNecXHUwMGZlWNeZ157XqCDXkdeZ16nXldecINeX16rXnSIsInNob3J0X25hbWUiOiLXlNeu15LXqNeo15wgXHUwMGZlXHUwMGY3XHUwMGZlINeo15wgXHUwMGZlWDeZ16fXqdeUIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiNlYTU4MGMiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTlRFeUlpQm9aV2xuYUhROUlqVXhNaUlnZG1sbGQwSnZlRDBpTUNBd0lEVXhNaUExTVRJaUlHWnBiR3c5SW01dmJtVWlJSGh0Ykc1elBTSm9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SStQSEpsWTNRZ2VEMGlNVEF3SWlCNVBTSXhNREFpSUhkcFpIUm9QU0l6TVRJaUlHaGxhV2RvZEQwaU16RXlJaUJtYVd4c1BTSWpaR2RqYUNJZ2NuZzlJakU0SWk4K1BIUmxlSFFnZUQwaU1UWTJJaUI1UFNJeE56QWlJR1pwYkd3OUluZG9hWFJsSWlCbWIyNTBMV1poYldsc2VUMGlRWEpwWVd3c0lITmhibk10YzJWeWFXWWlJR1p2Ym5RdGMybDZaVDBpTVRoZ2VDSStYeUF3TnpOalhpQmNkVUF3TUdabFhIVkJNREUyWDJSaFhIVkJNREUwSWx3dlBIUmxlSFFnZUQwaU1UWTJJaUI1UFNJNU1TNGlJR1pwYkd3OUluZG9hWFJsSWlCbWIyNTBMV1poYldsc2VUMGlRWEpwWVd3c0lITmhibk10YzJWeWFXWWlJR1p2Ym5RdGMybDZaVDBpTVRoZ2VDSStYeUF3TnpOalgxdDBhaUJ2ZENBeFhpQmNkVUF3TUdabElGeDFRVEF4WVdSY2RVQXdNV2hqWDFsdFh5QmNkVUF3TVdGallpQmNkVUF3TVdkalpWNzBhbUZjSWw4dlBIUmxlSFFnZUQwaU1UWTJJaUI1UFNJeE5tVmZJR1pwYkd3OUluZG9hWFJsSWlCbWIyNTBMV1poYldsc2VUMGlRWEpwWVd3c0lITmhibUV0YzJWeWFXWWlJR1p2Ym5RdGMybDZaVDBpTVRoZ2VDSStYeUF3TnpOalhubGNkVUF3TW1Ga1hIVkJNREZsYXlCY2RVQXdNV1JqWDFreFhpa2dJRnN0SWw4dlBDOXpkbWMrIiwic2l6ZXMiOiI1MTJ4NTEyIiwidHlwZSI6ImltYWdlL3N2Zyt4bWwifV19">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap');
         
         * {
-            font-family: 'Heebo', sans-serif;
+            font-family: 'Assistant', 'Arial', sans-serif;
         }
         
         .timer-display {
@@ -29,286 +22,271 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
-        @media (max-width: 640px) {
-            .timer-display {
-                font-size: 3rem;
-            }
-        }
-        
-        .btn-timer {
-            min-height: 48px;
-            border-radius: 12px;
-            font-weight: 600;
+        .preset-button {
+            background: linear-gradient(135deg, #ea580c, #f97316);
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        .btn-timer:hover {
+        .preset-button:hover {
+            background: linear-gradient(135deg, #f97316, #fb923c);
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(251, 146, 60, 0.4);
         }
         
-        .btn-timer:active {
-            transform: translateY(0px);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .control-button {
+            transition: all 0.2s ease;
+            min-height: 48px;
+            min-width: 48px;
         }
         
-        .btn-preset {
-            background: linear-gradient(135deg, #ea580c, #fb923c);
-            color: white;
-            border: none;
-            min-height: 56px;
+        .control-button:hover {
+            transform: scale(1.05);
         }
         
-        .btn-preset:hover {
-            background: linear-gradient(135deg, #dc2626, #ea580c);
-        }
-        
-        .btn-control {
-            min-height: 52px;
-            font-size: 1.1rem;
-        }
-        
-        .input-time {
-            font-size: 1.5rem;
-            text-align: center;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 12px;
-            background: white;
-            min-height: 56px;
-        }
-        
-        .input-time:focus {
-            border-color: #ea580c;
-            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
-            outline: none;
-        }
-        
-        .modal-overlay {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
-        }
-        
-        .modal-content {
-            background: white;
-            border-radius: 16px;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        
-        .alert-button {
-            animation: pulse 1s infinite;
-            background: linear-gradient(135deg, #dc2626, #ef4444);
-            color: white;
-            font-size: 1.25rem;
-            padding: 16px 32px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(220, 38, 38, 0.3);
+        .timer-running {
+            animation: pulse 2s infinite;
         }
         
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        .running {
-            color: #059669;
-        }
-        
-        .paused {
-            color: #f59e0b;
-        }
-        
-        .finished {
-            color: #dc2626;
-            animation: flash 1s infinite;
-        }
-        
-        @keyframes flash {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.8; }
         }
         
-        .home-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 50;
+        .modal-overlay {
+            backdrop-filter: blur(5px);
+        }
+        
+        .beep {
+            animation: beep-flash 0.5s ease-in-out;
+        }
+        
+        @keyframes beep-flash {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(239, 68, 68, 0.2); }
+        }
+        
+        .install-button {
             background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-            color: white;
-            padding: 12px;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            animation: install-bounce 3s infinite;
         }
         
-        .cycles-selector {
-            background: #f3f4f6;
-            border: 2px solid #d1d5db;
-            border-radius: 8px;
-            padding: 8px 12px;
-            font-size: 1rem;
+        .install-button:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: scale(1.05);
         }
         
-        .cycles-selector:focus {
-            border-color: #ea580c;
-            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
-            outline: none;
+        @keyframes install-bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-3px);
+            }
+            60% {
+                transform: translateY(-2px);
+            }
+        }
+        
+        .input-field {
+            direction: ltr;
+            text-align: center;
+        }
+        
+        .stop-alarm-button {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            animation: alarm-pulse 1s infinite;
+        }
+        
+        @keyframes alarm-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+            }
+            50% { 
+                box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+            }
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-orange-50 to-yellow-50 min-h-screen">
+<body class="bg-gradient-to-br from-orange-50 to-yellow-50 min-h-screen" dir="rtl">
     <!-- Install Button -->
-    <button id="installBtn" class="home-button hidden">
-        <i class="fas fa-home"></i>
-    </button>
-    
+    <div class="fixed top-4 left-4 z-50">
+        <button id="installBtn" class="install-button text-white px-4 py-2 rounded-full shadow-lg text-sm font-semibold">
+            <i class="fas fa-download mr-2"></i>
+            התקן אפליקציה
+        </button>
+    </div>
+
     <!-- Main Container -->
     <div class="container mx-auto px-4 py-6 max-w-md">
         <!-- Header -->
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-orange-600 mb-2">🤖 העוזרת של אלקסה</h1>
-            <p class="text-lg text-gray-600">טיימר הבישול החכם שלך</p>
+            <h1 class="text-3xl font-bold text-orange-800 mb-2">
+                🤖 העוזרת של אלקסה
+            </h1>
+            <p class="text-orange-600 text-sm">טיימר הבישול - הכלי המושלם לכל בשלן</p>
         </div>
-        
+
         <!-- Timer Display -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 mb-6">
-            <div class="text-center mb-4">
-                <div id="timerDisplay" class="timer-display text-gray-800">00:00</div>
-                <div class="text-sm text-gray-500 mt-2">
-                    <span class="mr-8">דקות</span>
-                    <span>שניות</span>
+        <div class="bg-white rounded-3xl shadow-xl p-6 mb-6 border-4 border-orange-200">
+            <div class="text-center">
+                <div id="timerDisplay" class="timer-display text-orange-800 mb-4">00:00</div>
+                
+                <!-- Time Input Section -->
+                <div class="flex justify-center items-center space-x-4 mb-4" dir="ltr">
+                    <!-- Minutes Section -->
+                    <div class="text-center">
+                        <input type="number" id="minutesInput" class="input-field w-20 h-12 text-2xl font-bold border-2 border-orange-300 rounded-lg text-orange-800" 
+                               value="0" min="0" max="99" placeholder="0">
+                        <div class="text-orange-600 text-sm mt-1">דקות</div>
+                    </div>
+                    
+                    <div class="text-3xl font-bold text-orange-400">:</div>
+                    
+                    <!-- Seconds Section -->
+                    <div class="text-center">
+                        <input type="number" id="secondsInput" class="input-field w-20 h-12 text-2xl font-bold border-2 border-orange-300 rounded-lg text-orange-800" 
+                               value="0" min="0" max="59" placeholder="0">
+                        <div class="text-orange-600 text-sm mt-1">שניות</div>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Time Input -->
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div class="text-center">
-                    <input type="number" id="minutesInput" class="input-time w-full" value="0" min="0" max="99" placeholder="דק'">
-                    <label class="text-sm text-gray-600 mt-1 block">דקות</label>
+
+                <!-- Cycles Selection -->
+                <div class="flex justify-center items-center mb-4">
+                    <label for="cyclesSelect" class="text-orange-700 ml-2">מחזורי התראה:</label>
+                    <select id="cyclesSelect" class="border-2 border-orange-300 rounded-lg p-2 text-orange-800">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
                 </div>
-                <div class="text-center">
-                    <input type="number" id="secondsInput" class="input-time w-full" value="0" min="0" max="59" placeholder="שנ'">
-                    <label class="text-sm text-gray-600 mt-1 block">שניות</label>
-                </div>
-            </div>
-            
-            <!-- Cycles Selector -->
-            <div class="flex items-center justify-center mb-4">
-                <label class="text-sm text-gray-600 ml-2">מחזורי התראה:</label>
-                <select id="cyclesSelector" class="cycles-selector">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3" selected>3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-            
-            <!-- Control Buttons -->
-            <div class="grid grid-cols-2 gap-3 mb-4">
-                <button id="startBtn" class="btn-timer btn-control bg-green-500 hover:bg-green-600 text-white">
-                    <i class="fas fa-play mr-2"></i>START
-                </button>
-                <button id="pauseBtn" class="btn-timer btn-control bg-yellow-500 hover:bg-yellow-600 text-white hidden">
-                    <i class="fas fa-pause mr-2"></i>PAUSE
-                </button>
-                <button id="resumeBtn" class="btn-timer btn-control bg-blue-500 hover:bg-blue-600 text-white hidden">
-                    <i class="fas fa-play mr-2"></i>RESUME
-                </button>
-                <button id="stopBtn" class="btn-timer btn-control bg-red-500 hover:bg-red-600 text-white">
-                    <i class="fas fa-stop mr-2"></i>STOP
-                </button>
-            </div>
-            
-            <!-- Quick Controls -->
-            <div class="grid grid-cols-2 gap-3">
-                <button id="addMinBtn" class="btn-timer btn-control bg-blue-500 hover:bg-blue-600 text-white">
-                    <i class="fas fa-plus mr-2"></i>+1 דק'
-                </button>
-                <button id="subMinBtn" class="btn-timer btn-control bg-purple-500 hover:bg-purple-600 text-white">
-                    <i class="fas fa-minus mr-2"></i>-1 דק'
-                </button>
             </div>
         </div>
-        
-        <!-- Stop Alert Button (Hidden by default) -->
-        <div id="stopAlertContainer" class="text-center mb-6 hidden">
-            <button id="stopAlertBtn" class="alert-button">
-                <i class="fas fa-bell-slash mr-2"></i>עצור צפצוף
+
+        <!-- Control Buttons -->
+        <div class="grid grid-cols-3 gap-3 mb-6">
+            <button id="startBtn" class="control-button bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl shadow-lg">
+                <i class="fas fa-play mr-1"></i> START
+            </button>
+            <button id="pauseBtn" class="control-button bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 rounded-xl shadow-lg" style="display: none;">
+                <i class="fas fa-pause mr-1"></i> PAUSE
+            </button>
+            <button id="resumeBtn" class="control-button bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-xl shadow-lg" style="display: none;">
+                <i class="fas fa-play mr-1"></i> RESUME
+            </button>
+            <button id="stopBtn" class="control-button bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-xl shadow-lg">
+                <i class="fas fa-stop mr-1"></i> STOP
             </button>
         </div>
-        
-        <!-- Quick Presets -->
-        <div class="bg-white rounded-2xl shadow-xl p-6 mb-6">
-            <h3 class="text-xl font-bold text-gray-800 text-center mb-4">זמנים מהירים</h3>
-            <div class="grid grid-cols-2 gap-3" id="presetsContainer">
-                <!-- Presets will be loaded here -->
-            </div>
-            <button id="editPresetsBtn" class="btn-timer w-full mt-4 bg-gray-500 hover:bg-gray-600 text-white">
-                <i class="fas fa-edit mr-2"></i>עריכת זמנים
+
+        <!-- Time Adjustment Buttons -->
+        <div class="grid grid-cols-2 gap-3 mb-6">
+            <button id="addMinuteBtn" class="control-button bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl shadow-lg">
+                <i class="fas fa-plus mr-1"></i> +1 דק'
+            </button>
+            <button id="subtractMinuteBtn" class="control-button bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl shadow-lg">
+                <i class="fas fa-minus mr-1"></i> -1 דק'
             </button>
         </div>
-        
+
+        <!-- Stop Alarm Button (Hidden by default) -->
+        <div id="stopAlarmContainer" class="mb-6" style="display: none;">
+            <button id="stopAlarmBtn" class="stop-alarm-button w-full text-white font-bold py-4 rounded-xl shadow-xl text-lg">
+                <i class="fas fa-volume-mute mr-2"></i>
+                עצור צפצוף
+            </button>
+        </div>
+
+        <!-- Quick Times -->
+        <div class="bg-white rounded-2xl shadow-lg p-4 mb-6">
+            <h3 class="text-lg font-semibold text-orange-800 mb-3 text-center">זמנים מהירים</h3>
+            <div class="grid grid-cols-2 gap-2" id="quickTimesGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            <button id="editTimesBtn" class="w-full mt-3 bg-orange-200 hover:bg-orange-300 text-orange-800 font-semibold py-2 rounded-lg transition-all">
+                <i class="fas fa-edit mr-1"></i> עריכת זמנים
+            </button>
+        </div>
+
         <!-- Footer -->
-        <div class="text-center text-gray-500 text-sm">
-            <p>נוצר במיוחד עבור בשלנים שרוצים לשחרר את אלקסה לדברים אחרים 🤖👨‍🍳</p>
+        <div class="text-center text-orange-600 text-sm">
+            נוצר במיוחד עבור בשלנים שרוצים לשחרר את אלקסה לדברים אחרים 🤖👨‍🍳
         </div>
     </div>
-    
-    <!-- Edit Presets Modal -->
-    <div id="editModal" class="fixed inset-0 modal-overlay hidden z-50">
+
+    <!-- Edit Times Modal -->
+    <div id="editModal" class="fixed inset-0 modal-overlay bg-black bg-opacity-50 hidden z-50">
         <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="modal-content w-full max-w-md p-6">
+            <div class="bg-white rounded-2xl p-6 w-full max-w-md max-h-96 overflow-y-auto">
                 <div class="flex justify-between items-center mb-4">
-                    <h3 class="text-xl font-bold">עריכת זמנים מהירים</h3>
-                    <button id="closeModal" class="text-gray-500 hover:text-gray-700 text-2xl">
-                        <i class="fas fa-times"></i>
+                    <h3 class="text-xl font-bold text-orange-800">עריכת זמנים מהירים</h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
                     </button>
                 </div>
+                
                 <div id="editForm" class="space-y-4">
-                    <!-- Edit form will be generated here -->
+                    <!-- Will be populated by JavaScript -->
                 </div>
+                
                 <div class="flex gap-3 mt-6">
-                    <button id="savePresets" class="btn-timer flex-1 bg-green-500 hover:bg-green-600 text-white">
-                        <i class="fas fa-save mr-2"></i>שמירה
+                    <button id="saveBtn" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-lg">
+                        שמירה
                     </button>
-                    <button id="cancelEdit" class="btn-timer flex-1 bg-gray-500 hover:bg-gray-600 text-white">
-                        <i class="fas fa-times mr-2"></i>ביטול
+                    <button id="cancelBtn" class="flex-1 bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 rounded-lg">
+                        ביטול
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Install Instructions Modal -->
-    <div id="installModal" class="fixed inset-0 modal-overlay hidden z-50">
+    <div id="installModal" class="fixed inset-0 modal-overlay bg-black bg-opacity-50 hidden z-50">
         <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="modal-content w-full max-w-md p-6">
+            <div class="bg-white rounded-2xl p-6 w-full max-w-md">
                 <div class="flex justify-between items-center mb-4">
-                    <h3 class="text-xl font-bold">הוסף לעמוד הבית</h3>
-                    <button id="closeInstallModal" class="text-gray-500 hover:text-gray-700 text-2xl">
-                        <i class="fas fa-times"></i>
+                    <h3 class="text-xl font-bold text-blue-800">התקנת האפליקציה</h3>
+                    <button id="closeInstallModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
                     </button>
                 </div>
-                <div class="space-y-4">
+                
+                <div class="space-y-4 text-right">
                     <div class="bg-blue-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-blue-800 mb-2">📱 iPhone/iPad:</h4>
-                        <p class="text-blue-700">Safari → כפתור שתף → "הוסף לעמוד הבית"</p>
+                        <h4 class="font-semibold text-blue-800 mb-2">📱 iPhone/iPad:</h4>
+                        <p class="text-blue-700 text-sm">
+                            1. פתח ב-Safari<br>
+                            2. לחץ על כפתור "שתף" <i class="fas fa-share"></i><br>
+                            3. בחר "הוסף לעמוד הבית"<br>
+                            4. לחץ "הוסף"
+                        </p>
                     </div>
+                    
                     <div class="bg-green-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-green-800 mb-2">🤖 Android:</h4>
-                        <p class="text-green-700">Chrome → תפריט (⋮) → "הוסף לעמוד הבית"</p>
+                        <h4 class="font-semibold text-green-800 mb-2">🤖 Android:</h4>
+                        <p class="text-green-700 text-sm">
+                            1. פתח ב-Chrome<br>
+                            2. לחץ על התפריט (⋮)<br>
+                            3. בחר "הוסף לעמוד הבית"<br>
+                            4. לחץ "הוסף"
+                        </p>
                     </div>
+                    
                     <div class="bg-purple-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-purple-800 mb-2">💻 מחשב:</h4>
-                        <p class="text-purple-700">Chrome → אייקון התקנה בשורת הכתובת</p>
+                        <h4 class="font-semibold text-purple-800 mb-2">💻 מחשב:</h4>
+                        <p class="text-purple-700 text-sm">
+                            1. חפש אייקון התקנה בכתובת<br>
+                            2. לחץ "התקן"<br>
+                            3. אשר התקנה
+                        </p>
                     </div>
                 </div>
             </div>
@@ -316,495 +294,367 @@
     </div>
 
     <script>
-        class CookingTimer {
-            constructor() {
-                this.totalSeconds = 0;
-                this.remainingSeconds = 0;
-                this.isRunning = false;
-                this.isPaused = false;
-                this.interval = null;
-                this.audioContext = null;
-                this.alertInterval = null;
-                this.cycleCount = 0;
-                this.maxCycles = 3;
-                
-                this.defaultPresets = [
-                    { name: '🥚 ביצה רכה', minutes: 3, seconds: 0 },
-                    { name: '🍵 תה', minutes: 2, seconds: 0 },
-                    { name: '☕ קפה', minutes: 5, seconds: 0 },
-                    { name: '🍝 פסטה', minutes: 8, seconds: 0 },
-                    { name: '🍕 פיצה', minutes: 12, seconds: 0 },
-                    { name: '🍚 אורז', minutes: 15, seconds: 0 },
-                    { name: '🍗 עוף בתנור', minutes: 25, seconds: 0 },
-                    { name: '🎂 עוגה', minutes: 45, seconds: 0 }
-                ];
-                
-                this.init();
+        // Default quick times
+        let quickTimes = [
+            { name: 'ביצה רכה', minutes: 3, seconds: 0 },
+            { name: 'תה', minutes: 2, seconds: 0 },
+            { name: 'קפה', minutes: 5, seconds: 0 },
+            { name: 'פסטה', minutes: 8, seconds: 0 },
+            { name: 'פיצה', minutes: 12, seconds: 0 },
+            { name: 'אורז', minutes: 15, seconds: 0 },
+            { name: 'עוף בתנור', minutes: 25, seconds: 0 },
+            { name: 'עוגה', minutes: 45, seconds: 0 }
+        ];
+
+        // Load saved quick times
+        const savedTimes = localStorage.getItem('quickTimes');
+        if (savedTimes) {
+            quickTimes = JSON.parse(savedTimes);
+        }
+
+        // Timer state
+        let timerInterval = null;
+        let totalSeconds = 0;
+        let isRunning = false;
+        let isPaused = false;
+        let alarmInterval = null;
+        let currentCycle = 0;
+        let maxCycles = 3;
+
+        // DOM elements
+        const timerDisplay = document.getElementById('timerDisplay');
+        const minutesInput = document.getElementById('minutesInput');
+        const secondsInput = document.getElementById('secondsInput');
+        const startBtn = document.getElementById('startBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resumeBtn = document.getElementById('resumeBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const addMinuteBtn = document.getElementById('addMinuteBtn');
+        const subtractMinuteBtn = document.getElementById('subtractMinuteBtn');
+        const cyclesSelect = document.getElementById('cyclesSelect');
+        const stopAlarmBtn = document.getElementById('stopAlarmBtn');
+        const stopAlarmContainer = document.getElementById('stopAlarmContainer');
+        const quickTimesGrid = document.getElementById('quickTimesGrid');
+        const editTimesBtn = document.getElementById('editTimesBtn');
+        const editModal = document.getElementById('editModal');
+        const installBtn = document.getElementById('installBtn');
+        const installModal = document.getElementById('installModal');
+
+        // Audio context for beeps
+        let audioContext = null;
+
+        function initAudio() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function playBeep(frequency = 1000, duration = 200) {
+            initAudio();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.value = frequency;
+            oscillator.type = 'sine';
+            
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration / 1000);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + duration / 1000);
+        }
+
+        function formatTime(totalSeconds) {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function updateDisplay() {
+            timerDisplay.textContent = formatTime(totalSeconds);
+        }
+
+        function updateInputs() {
+            minutesInput.value = Math.floor(totalSeconds / 60);
+            secondsInput.value = totalSeconds % 60;
+        }
+
+        function getInputTime() {
+            const minutes = parseInt(minutesInput.value) || 0;
+            const seconds = parseInt(secondsInput.value) || 0;
+            return minutes * 60 + (seconds > 59 ? 59 : seconds);
+        }
+
+        function startTimer() {
+            if (!isRunning && !isPaused) {
+                totalSeconds = getInputTime();
+                if (totalSeconds === 0) return;
             }
             
-            init() {
-                this.loadPresets();
-                this.setupEventListeners();
-                this.setupPWA();
-                this.loadSettings();
-                this.initAudioContext();
-            }
+            isRunning = true;
+            isPaused = false;
+            maxCycles = parseInt(cyclesSelect.value);
             
-            initAudioContext() {
-                try {
-                    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                } catch (e) {
-                    console.warn('Web Audio API not supported');
+            startBtn.style.display = 'none';
+            pauseBtn.style.display = 'block';
+            resumeBtn.style.display = 'none';
+            
+            timerDisplay.classList.add('timer-running');
+            
+            timerInterval = setInterval(() => {
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                    updateDisplay();
+                    updateInputs();
+                } else {
+                    stopTimer();
+                    startAlarm();
                 }
-            }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            isRunning = false;
+            isPaused = true;
+            clearInterval(timerInterval);
             
-            setupEventListeners() {
-                // Timer controls
-                document.getElementById('startBtn').addEventListener('click', () => this.start());
-                document.getElementById('pauseBtn').addEventListener('click', () => this.pause());
-                document.getElementById('resumeBtn').addEventListener('click', () => this.resume());
-                document.getElementById('stopBtn').addEventListener('click', () => this.stop());
-                document.getElementById('addMinBtn').addEventListener('click', () => this.addMinute());
-                document.getElementById('subMinBtn').addEventListener('click', () => this.subtractMinute());
-                document.getElementById('stopAlertBtn').addEventListener('click', () => this.stopAlert());
+            pauseBtn.style.display = 'none';
+            resumeBtn.style.display = 'block';
+            
+            timerDisplay.classList.remove('timer-running');
+            playBeep(800, 100);
+        }
+
+        function resumeTimer() {
+            startTimer();
+            playBeep(1000, 100);
+            playBeep(1200, 100);
+        }
+
+        function stopTimer() {
+            isRunning = false;
+            isPaused = false;
+            clearInterval(timerInterval);
+            
+            startBtn.style.display = 'block';
+            pauseBtn.style.display = 'none';
+            resumeBtn.style.display = 'none';
+            
+            timerDisplay.classList.remove('timer-running');
+        }
+
+        function resetTimer() {
+            stopTimer();
+            totalSeconds = 0;
+            updateDisplay();
+            updateInputs();
+        }
+
+        function addMinute() {
+            if (isRunning || isPaused) {
+                totalSeconds += 60;
+                updateDisplay();
+                updateInputs();
+                playBeep(1200, 150);
+            }
+        }
+
+        function subtractMinute() {
+            if (isRunning || isPaused) {
+                totalSeconds = Math.max(0, totalSeconds - 60);
+                updateDisplay();
+                updateInputs();
+                playBeep(800, 150);
+            }
+        }
+
+        function startAlarm() {
+            currentCycle = 0;
+            stopAlarmContainer.style.display = 'block';
+            document.body.classList.add('beep');
+            
+            const beepSequence = () => {
+                if (currentCycle >= maxCycles) {
+                    stopAlarm();
+                    return;
+                }
                 
-                // Input validation
-                document.getElementById('minutesInput').addEventListener('input', (e) => this.validateInput(e, 99));
-                document.getElementById('secondsInput').addEventListener('input', (e) => this.validateInput(e, 59));
-                document.getElementById('minutesInput').addEventListener('change', () => this.updateDisplay());
-                document.getElementById('secondsInput').addEventListener('change', () => this.updateDisplay());
-                
-                // Cycles selector
-                document.getElementById('cyclesSelector').addEventListener('change', (e) => {
-                    this.maxCycles = parseInt(e.target.value);
-                    this.saveSettings();
-                });
-                
-                // Modal controls
-                document.getElementById('editPresetsBtn').addEventListener('click', () => this.openEditModal());
-                document.getElementById('closeModal').addEventListener('click', () => this.closeEditModal());
-                document.getElementById('cancelEdit').addEventListener('click', () => this.closeEditModal());
-                document.getElementById('savePresets').addEventListener('click', () => this.savePresets());
-                
-                // Install button
-                document.getElementById('installBtn').addEventListener('click', () => this.showInstallModal());
-                document.getElementById('closeInstallModal').addEventListener('click', () => this.hideInstallModal());
-                
-                // Keyboard support
-                document.addEventListener('keydown', (e) => {
-                    if (e.code === 'Space') {
-                        e.preventDefault();
-                        if (this.isRunning) {
-                            this.pause();
-                        } else if (this.isPaused) {
-                            this.resume();
+                let beepCount = 0;
+                const beepInterval = setInterval(() => {
+                    if (beepCount < 3) {
+                        const frequencies = [1000, 1200, 1400];
+                        playBeep(frequencies[beepCount], 300);
+                        beepCount++;
+                    } else {
+                        clearInterval(beepInterval);
+                        currentCycle++;
+                        
+                        if (currentCycle < maxCycles) {
+                            setTimeout(beepSequence, 2000);
                         } else {
-                            this.start();
+                            stopAlarm();
                         }
                     }
+                }, 400);
+            };
+            
+            beepSequence();
+            
+            // Browser notification
+            if (Notification.permission === 'granted') {
+                new Notification('העוזרת של אלקסה', {
+                    body: 'הטיימר הסתיים! הזמן לבדוק את הבישול 🍳',
+                    icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMTAwIiB5PSIxMDAiIHdpZHRoPSIzMTIiIGhlaWdodD0iMzEyIiBmaWxsPSIjZGdjaGgiIHJ4PSIxOCIvPjwvc3ZnPg=='
                 });
-            }
-            
-            validateInput(e, max) {
-                let value = parseInt(e.target.value);
-                if (isNaN(value) || value < 0) {
-                    e.target.value = 0;
-                } else if (value > max) {
-                    e.target.value = max;
-                }
-            }
-            
-            updateDisplay() {
-                if (!this.isRunning && !this.isPaused) {
-                    const minutes = parseInt(document.getElementById('minutesInput').value) || 0;
-                    const seconds = parseInt(document.getElementById('secondsInput').value) || 0;
-                    this.totalSeconds = minutes * 60 + seconds;
-                    this.remainingSeconds = this.totalSeconds;
-                }
-                
-                const displayMinutes = Math.floor(this.remainingSeconds / 60);
-                const displaySeconds = this.remainingSeconds % 60;
-                
-                document.getElementById('timerDisplay').textContent = 
-                    `${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
-                
-                // Update display status
-                const display = document.getElementById('timerDisplay');
-                display.className = 'timer-display text-gray-800';
-                
-                if (this.isRunning) {
-                    display.classList.add('running');
-                } else if (this.isPaused) {
-                    display.classList.add('paused');
-                } else if (this.remainingSeconds === 0 && this.totalSeconds > 0) {
-                    display.classList.add('finished');
-                }
-            }
-            
-            start() {
-                const minutes = parseInt(document.getElementById('minutesInput').value) || 0;
-                const seconds = parseInt(document.getElementById('secondsInput').value) || 0;
-                
-                if (minutes === 0 && seconds === 0) {
-                    alert('אנא הגדר זמן לפני התחלת הטיימר');
-                    return;
-                }
-                
-                this.totalSeconds = minutes * 60 + seconds;
-                this.remainingSeconds = this.totalSeconds;
-                this.isRunning = true;
-                this.isPaused = false;
-                this.updateButtons();
-                this.startCountdown();
-                
-                // Resume audio context if needed
-                if (this.audioContext && this.audioContext.state === 'suspended') {
-                    this.audioContext.resume();
-                }
-            }
-            
-            startCountdown() {
-                this.interval = setInterval(() => {
-                    if (this.remainingSeconds > 0) {
-                        this.remainingSeconds--;
-                        this.updateDisplay();
-                    } else {
-                        this.finish();
-                    }
-                }, 1000);
-            }
-            
-            pause() {
-                this.isRunning = false;
-                this.isPaused = true;
-                if (this.interval) {
-                    clearInterval(this.interval);
-                    this.interval = null;
-                }
-                this.updateButtons();
-                this.updateDisplay();
-            }
-            
-            resume() {
-                this.isRunning = true;
-                this.isPaused = false;
-                this.updateButtons();
-                this.startCountdown();
-            }
-            
-            stop() {
-                this.isRunning = false;
-                this.isPaused = false;
-                this.remainingSeconds = 0;
-                this.totalSeconds = 0;
-                
-                if (this.interval) {
-                    clearInterval(this.interval);
-                    this.interval = null;
-                }
-                
-                this.stopAlert();
-                this.updateButtons();
-                this.updateDisplay();
-                
-                // Reset inputs
-                document.getElementById('minutesInput').value = 0;
-                document.getElementById('secondsInput').value = 0;
-            }
-            
-            finish() {
-                this.isRunning = false;
-                this.isPaused = false;
-                
-                if (this.interval) {
-                    clearInterval(this.interval);
-                    this.interval = null;
-                }
-                
-                this.updateButtons();
-                this.updateDisplay();
-                this.startAlert();
-                
-                // Show notification
-                if ('Notification' in window && Notification.permission === 'granted') {
-                    new Notification('טיימר הבישול', {
-                        body: 'הזמן הסתיים!',
-                        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9ImNvcmFsIiBncmFkaWVudD0iYmRlYXQiPjxwYXRoIGQ9Ik0yNTYgMTMyYTk0IDk0IDAgMCAxIDAgMTg1LjkgMzYgMjU2LjkgMzU2LjkgMzU2YjE0NC4xIDE0NCAxNDQgMTQ0czE0NCAzMi45YjIzNS42LTUyLjkgMzU2LTEyNy43IDI1NiAyNTZ6Ii8+IDxwYXRoIGQ9Ik0yNDggMjQwbDE2IDE2djE2cy0xNi0xNiAxNjR6Ii8+PC9zdmc+'
-                    });
-                }
-                
-                // Vibrate if supported
-                if ('vibrate' in navigator) {
-                    navigator.vibrate([500, 200, 500, 200, 500]);
-                }
-            }
-            
-            addMinute() {
-                if (this.isRunning || this.isPaused) {
-                    this.remainingSeconds += 60;
-                    this.updateDisplay();
-                    this.playBeep(800, 100);
-                } else {
-                    const minutesInput = document.getElementById('minutesInput');
-                    minutesInput.value = Math.min(99, parseInt(minutesInput.value) + 1);
-                    this.updateDisplay();
-                }
-            }
-            
-            subtractMinute() {
-                if (this.isRunning || this.isPaused) {
-                    this.remainingSeconds = Math.max(0, this.remainingSeconds - 60);
-                    this.updateDisplay();
-                    this.playBeep(600, 100);
-                } else {
-                    const minutesInput = document.getElementById('minutesInput');
-                    minutesInput.value = Math.max(0, parseInt(minutesInput.value) - 1);
-                    this.updateDisplay();
-                }
-            }
-            
-            updateButtons() {
-                const startBtn = document.getElementById('startBtn');
-                const pauseBtn = document.getElementById('pauseBtn');
-                const resumeBtn = document.getElementById('resumeBtn');
-                
-                if (this.isRunning) {
-                    startBtn.classList.add('hidden');
-                    pauseBtn.classList.remove('hidden');
-                    resumeBtn.classList.add('hidden');
-                } else if (this.isPaused) {
-                    startBtn.classList.add('hidden');
-                    pauseBtn.classList.add('hidden');
-                    resumeBtn.classList.remove('hidden');
-                } else {
-                    startBtn.classList.remove('hidden');
-                    pauseBtn.classList.add('hidden');
-                    resumeBtn.classList.add('hidden');
-                }
-            }
-            
-            startAlert() {
-                this.cycleCount = 0;
-                document.getElementById('stopAlertContainer').classList.remove('hidden');
-                this.alertCycle();
-            }
-            
-            alertCycle() {
-                if (this.cycleCount >= this.maxCycles) {
-                    this.stopAlert();
-                    return;
-                }
-                
-                this.cycleCount++;
-                
-                // Play 3 beeps with different frequencies
-                this.playBeep(1000, 200);
-                setTimeout(() => this.playBeep(1200, 200), 300);
-                setTimeout(() => this.playBeep(1400, 200), 600);
-                
-                // Schedule next cycle
-                this.alertInterval = setTimeout(() => this.alertCycle(), 2000);
-            }
-            
-            stopAlert() {
-                if (this.alertInterval) {
-                    clearTimeout(this.alertInterval);
-                    this.alertInterval = null;
-                }
-                this.cycleCount = 0;
-                document.getElementById('stopAlertContainer').classList.add('hidden');
-            }
-            
-            playBeep(frequency, duration) {
-                if (!this.audioContext) return;
-                
-                const oscillator = this.audioContext.createOscillator();
-                const gainNode = this.audioContext.createGain();
-                
-                oscillator.connect(gainNode);
-                gainNode.connect(this.audioContext.destination);
-                
-                oscillator.frequency.value = frequency;
-                oscillator.type = 'sine';
-                
-                gainNode.gain.setValueAtTime(0.3, this.audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, this.audioContext.currentTime + duration / 1000);
-                
-                oscillator.start(this.audioContext.currentTime);
-                oscillator.stop(this.audioContext.currentTime + duration / 1000);
-            }
-            
-            loadPresets() {
-                const saved = localStorage.getItem('cookingTimerPresets');
-                const presets = saved ? JSON.parse(saved) : this.defaultPresets;
-                this.renderPresets(presets);
-            }
-            
-            renderPresets(presets) {
-                const container = document.getElementById('presetsContainer');
-                container.innerHTML = '';
-                
-                presets.forEach((preset, index) => {
-                    const button = document.createElement('button');
-                    button.className = 'btn-timer btn-preset';
-                    button.innerHTML = `
-                        <div class="text-center">
-                            <div class="font-bold">${preset.name}</div>
-                            <div class="text-sm opacity-80">${preset.minutes}:${preset.seconds.toString().padStart(2, '0')}</div>
-                        </div>
-                    `;
-                    button.addEventListener('click', () => {
-                        document.getElementById('minutesInput').value = preset.minutes;
-                        document.getElementById('secondsInput').value = preset.seconds;
-                        this.updateDisplay();
-                    });
-                    container.appendChild(button);
-                });
-            }
-            
-            openEditModal() {
-                const saved = localStorage.getItem('cookingTimerPresets');
-                const presets = saved ? JSON.parse(saved) : this.defaultPresets;
-                
-                const form = document.getElementById('editForm');
-                form.innerHTML = '';
-                
-                presets.forEach((preset, index) => {
-                    const div = document.createElement('div');
-                    div.className = 'bg-gray-50 p-4 rounded-lg';
-                    div.innerHTML = `
-                        <div class="mb-2">
-                            <label class="block text-sm font-medium text-gray-700 mb-1">שם המנה</label>
-                            <input type="text" class="w-full p-2 border border-gray-300 rounded" 
-                                   value="${preset.name}" data-index="${index}" data-field="name">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">דקות</label>
-                                <input type="number" class="w-full p-2 border border-gray-300 rounded" 
-                                       value="${preset.minutes}" min="0" max="99" data-index="${index}" data-field="minutes">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">שניות</label>
-                                <input type="number" class="w-full p-2 border border-gray-300 rounded" 
-                                       value="${preset.seconds}" min="0" max="59" data-index="${index}" data-field="seconds">
-                            </div>
-                        </div>
-                    `;
-                    form.appendChild(div);
-                });
-                
-                document.getElementById('editModal').classList.remove('hidden');
-            }
-            
-            closeEditModal() {
-                document.getElementById('editModal').classList.add('hidden');
-            }
-            
-            savePresets() {
-                const inputs = document.querySelectorAll('#editForm input');
-                const presets = [];
-                
-                for (let i = 0; i < 8; i++) {
-                    presets[i] = { name: '', minutes: 0, seconds: 0 };
-                }
-                
-                inputs.forEach(input => {
-                    const index = parseInt(input.dataset.index);
-                    const field = input.dataset.field;
-                    
-                    if (field === 'name') {
-                        presets[index][field] = input.value || this.defaultPresets[index].name;
-                    } else {
-                        let value = parseInt(input.value) || 0;
-                        if (field === 'seconds' && value > 59) value = 59;
-                        if (value < 0) value = 0;
-                        presets[index][field] = value;
-                    }
-                });
-                
-                localStorage.setItem('cookingTimerPresets', JSON.stringify(presets));
-                this.renderPresets(presets);
-                this.closeEditModal();
-            }
-            
-            loadSettings() {
-                const cycles = localStorage.getItem('cookingTimerCycles');
-                if (cycles) {
-                    this.maxCycles = parseInt(cycles);
-                    document.getElementById('cyclesSelector').value = this.maxCycles;
-                }
-            }
-            
-            saveSettings() {
-                localStorage.setItem('cookingTimerCycles', this.maxCycles.toString());
-            }
-            
-            setupPWA() {
-                // Show install button for PWA
-                let deferredPrompt;
-                
-                window.addEventListener('beforeinstallprompt', (e) => {
-                    e.preventDefault();
-                    deferredPrompt = e;
-                    document.getElementById('installBtn').classList.remove('hidden');
-                });
-                
-                // Check if already installed
-                if (window.matchMedia('(display-mode: standalone)').matches) {
-                    document.getElementById('installBtn').classList.add('hidden');
-                }
-                
-                // Request notification permission
-                if ('Notification' in window && Notification.permission === 'default') {
-                    Notification.requestPermission();
-                }
-            }
-            
-            showInstallModal() {
-                document.getElementById('installModal').classList.remove('hidden');
-            }
-            
-            hideInstallModal() {
-                document.getElementById('installModal').classList.add('hidden');
             }
         }
-        
-        // Initialize the timer when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            new CookingTimer();
-        });
-        
-        // Service Worker registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                const swCode = `
-                    const CACHE_NAME = 'cooking-timer-v1';
-                    const urlsToCache = ['/'];
-                    
-                    self.addEventListener('install', (event) => {
-                        event.waitUntil(
-                            caches.open(CACHE_NAME)
-                                .then((cache) => cache.addAll(urlsToCache))
-                        );
-                    });
-                    
-                    self.addEventListener('fetch', (event) => {
-                        event.respondWith(
-                            caches.match(event.request)
-                                .then((response) => response || fetch(event.request))
-                        );
-                    });
+
+        function stopAlarm() {
+            clearInterval(alarmInterval);
+            stopAlarmContainer.style.display = 'none';
+            document.body.classList.remove('beep');
+            currentCycle = 0;
+        }
+
+        function renderQuickTimes() {
+            quickTimesGrid.innerHTML = '';
+            quickTimes.forEach((time, index) => {
+                const button = document.createElement('button');
+                button.className = 'preset-button text-white font-semibold py-2 px-3 rounded-lg shadow-lg text-sm';
+                button.innerHTML = `
+                    <div class="text-xs opacity-90">${time.name}</div>
+                    <div class="font-bold">${time.minutes}:${time.seconds.toString().padStart(2, '0')}</div>
                 `;
-                
-                const blob = new Blob([swCode], { type: 'application/javascript' });
-                const swUrl = URL.createObjectURL(blob);
-                
-                navigator.serviceWorker.register(swUrl)
-                    .then(() => console.log('SW registered'))
-                    .catch(() => console.log('SW registration failed'));
+                button.addEventListener('click', () => {
+                    minutesInput.value = time.minutes;
+                    secondsInput.value = time.seconds;
+                    totalSeconds = time.minutes * 60 + time.seconds;
+                    updateDisplay();
+                });
+                quickTimesGrid.appendChild(button);
             });
         }
+
+        function showEditModal() {
+            const editForm = document.getElementById('editForm');
+            editForm.innerHTML = '';
+            
+            quickTimes.forEach((time, index) => {
+                const div = document.createElement('div');
+                div.className = 'bg-orange-50 p-3 rounded-lg';
+                div.innerHTML = `
+                    <div class="grid grid-cols-3 gap-2 items-center">
+                        <input type="text" id="name${index}" value="${time.name}" class="border rounded p-2 text-sm" placeholder="שם המנה">
+                        <input type="number" id="minutes${index}" value="${time.minutes}" min="0" max="99" class="border rounded p-2 text-sm" placeholder="דק'">
+                        <input type="number" id="seconds${index}" value="${time.seconds}" min="0" max="59" class="border rounded p-2 text-sm" placeholder="שנ'">
+                    </div>
+                `;
+                editForm.appendChild(div);
+            });
+            
+            editModal.classList.remove('hidden');
+        }
+
+        function saveQuickTimes() {
+            quickTimes.forEach((time, index) => {
+                const nameInput = document.getElementById(`name${index}`);
+                const minutesInput = document.getElementById(`minutes${index}`);
+                const secondsInput = document.getElementById(`seconds${index}`);
+                
+                if (nameInput && minutesInput && secondsInput) {
+                    time.name = nameInput.value || time.name;
+                    time.minutes = parseInt(minutesInput.value) || 0;
+                    time.seconds = Math.min(parseInt(secondsInput.value) || 0, 59);
+                }
+            });
+            
+            localStorage.setItem('quickTimes', JSON.stringify(quickTimes));
+            renderQuickTimes();
+            editModal.classList.add('hidden');
+        }
+
+        function showInstallModal() {
+            installModal.classList.remove('hidden');
+        }
+
+        // Event listeners
+        startBtn.addEventListener('click', startTimer);
+        pauseBtn.addEventListener('click', pauseTimer);
+        resumeBtn.addEventListener('click', resumeTimer);
+        stopBtn.addEventListener('click', resetTimer);
+        addMinuteBtn.addEventListener('click', addMinute);
+        subtractMinuteBtn.addEventListener('click', subtractMinute);
+        stopAlarmBtn.addEventListener('click', stopAlarm);
+        editTimesBtn.addEventListener('click', showEditModal);
+        installBtn.addEventListener('click', showInstallModal);
+
+        // Modal close events
+        document.getElementById('closeModal').addEventListener('click', () => {
+            editModal.classList.add('hidden');
+        });
+
+        document.getElementById('closeInstallModal').addEventListener('click', () => {
+            installModal.classList.add('hidden');
+        });
+
+        document.getElementById('saveBtn').addEventListener('click', saveQuickTimes);
+        document.getElementById('cancelBtn').addEventListener('click', () => {
+            editModal.classList.add('hidden');
+        });
+
+        // Input validation
+        secondsInput.addEventListener('input', () => {
+            let value = parseInt(secondsInput.value);
+            if (value > 59) {
+                secondsInput.value = 59;
+            } else if (value < 0) {
+                secondsInput.value = 0;
+            }
+        });
+
+        minutesInput.addEventListener('input', () => {
+            let value = parseInt(minutesInput.value);
+            if (value < 0) {
+                minutesInput.value = 0;
+            }
+        });
+
+        // Request notification permission
+        if ('Notification' in window && Notification.permission === 'default') {
+            Notification.requestPermission();
+        }
+
+        // PWA Install detection
+        let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            deferredPrompt = e;
+            installBtn.style.display = 'block';
+        });
+
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    installBtn.style.display = 'none';
+                }
+                deferredPrompt = null;
+            } else {
+                showInstallModal();
+            }
+        });
+
+        // Initialize
+        renderQuickTimes();
+        updateDisplay();
+        
+        // Enable audio on first user interaction
+        document.addEventListener('click', initAudio, { once: true });
+        document.addEventListener('touchstart', initAudio, { once: true });
     </script>
 </body>
 </html>
